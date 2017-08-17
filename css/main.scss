@@ -1,0 +1,40 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "bulma/utilities/_all",
+        "bulma/base/_all",
+        "bulma/elements/_all",
+        "bulma/components/_all",
+        "bulma/grid/_all",
+        "bulma/layout/_all"
+;
+
+#navMenuMain {
+    .navbar-item {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  }
+
+.hero-primary {
+    background-color: #21D4FD;
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}

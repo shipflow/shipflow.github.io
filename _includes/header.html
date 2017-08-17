@@ -1,0 +1,43 @@
+<header class="site-header">
+
+  <div class="container">
+    <nav class="navbar is-transparent">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="{{ "/" | prepend: site.baseurl }}">
+          <img src="{{ "/img/logo-text-inverse.png" | prepend: site.baseurl }}" alt="Bulma: a modern CSS framework based on Flexbox" width="169" height="28">
+        </a>
+
+        <a class="navbar-item is-hidden-desktop" href="https://github.com/jgthms/bulma" target="_blank">
+          <span class="icon" style="color: #333;">
+            <i class="fa fa-github"></i>
+          </span>
+        </a>
+
+        <a class="navbar-item is-hidden-desktop" href="https://twitter.com/jgthms" target="_blank">
+          <span class="icon" style="color: #55acee;">
+            <i class="fa fa-twitter"></i>
+          </span>
+        </a>
+
+        <div class="navbar-burger burger" data-target="navMenuMain">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <div id="navMenuMain" class="navbar-menu">
+        <div class="navbar-start">
+          <a class="navbar-item is-active" href="{{ "/features" | prepend: site.baseurl }}">Features</a>
+          <a class="navbar-item is-active" href="{{ "/benefits" | prepend: site.baseurl }}">Benefits</a>
+          <a class="navbar-item is-active" href="{{ "/pricing" | prepend: site.baseurl }}">Pricing</a>
+        </div>
+
+        <div class="navbar-end">
+          <a class="navbar-item " href="http://bulma.io/expo/">Expo</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+</header>
