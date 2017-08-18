@@ -11,36 +11,60 @@
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (max-width: $device) {
-        @content;
-    }
+	@media screen and (max-width: $device) {
+		@content;
+	}
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "base",
-        "bulma/utilities/_all",
-        "bulma/base/_all",
-        "bulma/elements/_all",
-        "bulma/components/_all",
-        "bulma/grid/_all",
-        "bulma/layout/_all"
+		"base",
+		"bulma/utilities/_all",
+		"bulma/base/_all",
+		"bulma/elements/_all",
+		"bulma/components/_all",
+		"bulma/grid/_all",
+		"bulma/layout/_all"
 ;
 
 #navMenuMain {
-    .navbar-item {
-      margin-left: 30px;
-      margin-right: 30px;
+	.navbar-item {
+	  margin-left: 30px;
+	  margin-right: 30px;
 
-      text-transform: uppercase;
-    }
+	  text-transform: uppercase;
+	}
   }
 
 .hero-primary {
-    background-color: #21D4FD;
-    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+	background-color: #21D4FD;
+	background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
 }
 
 .bg-subtle-gray {
-    background-color: #f8f8fb;
+	background-color: #f8f8fb;
+}
+
+.site-header {
+	border-bottom: 1px solid #f1f1f1;
+
+	.navbar {
+		background: transparent;
+	}
+}
+
+.button {
+	>.icon {
+		margin-right: 10px !important;
+	}
+}
+
+.feature-block {
+	>h1 {
+		font-weight: bold;
+	}
+
+	>p {
+		font-size: 1.2rem;
+	}
 }
