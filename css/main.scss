@@ -48,6 +48,11 @@
 .site-header {
 	border-bottom: 1px solid #f1f1f1;
 
+	.center-logo {
+		display: block;
+		padding: 10px 0 5px;
+	}
+
 	.navbar {
 		background: transparent;
 	}
